@@ -18,10 +18,10 @@ body {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-light: #F2FFF6;
+  --color-light: #FCFFFD; 
   --color-dark: #06110D;
-  --color-tertiary: #DBE7DF;
-  --color-secondary: #CCD5CF; 
+  --color-tertiary: #E9EEEA; 
+  --color-secondary: #F1F3F2; 
   --color-accent: #0F2A1F;
   --color-primary: #41F276;
 }
