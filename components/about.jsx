@@ -12,6 +12,12 @@ const galleryImages = [
   "/about/about-3.jpg",
   "/about/about-4.jpg",
   "/about/about-5.jpg",
+  "/about/about-3.jpg",
+  "/about/about-4.jpg",
+  "/about/about-5.jpg",
+  "/about/about-3.jpg",
+  "/about/about-4.jpg",
+  "/about/about-5.jpg",
 ];
 
 const loopedGalleryImages = [...galleryImages, ...galleryImages];
@@ -55,7 +61,7 @@ export default function About() {
           transition={
             shouldReduceMotion
               ? undefined
-              : { duration: 34, ease: "linear", repeat: Infinity }
+              : { duration: 20, ease: "linear", repeat: Infinity }
           }
         >
           {loopedGalleryImages.map((image, index) => (

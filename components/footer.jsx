@@ -91,7 +91,7 @@ export default function Footer() {
 
         <div className="mt-16 border-t border-light/20 pt-6 md:mt-20 md:pt-7">
           <p className="text-[clamp(1rem,0.2vw+0.94rem,1.1rem)] text-light/75">
-            (c) 2025 demowebsite. All rights reserved.
+            (c) 2026 demowebsite. All rights reserved.
           </p>
         </div>
       </div>
