@@ -36,7 +36,7 @@ export default function About() {
           </h2>
 
           <p className="paragraph mt-7 max-w-[36ch] !text-dark/75">
-            At Greenova, we create beautiful, functional outdoor spaces with
+            At demowebsite, we create beautiful, functional outdoor spaces with
             care and expertise. From design to maintenance, our team delivers
             professional landscaping solutions tailored to your home, ensuring
             every garden looks its best year-round.

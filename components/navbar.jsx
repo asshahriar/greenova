@@ -24,7 +24,7 @@ export default function Navbar() {
         >
           <GiLeafSwirl aria-hidden className="size-6" />
           <span className="sub-heading !tracking-[-0.02em] text-light">
-            Greenova
+            demowebsite
           </span>
         </Link>
 

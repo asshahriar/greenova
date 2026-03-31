@@ -8,7 +8,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "2 Days",
 		price: "100$",
-		image: "/about/about-1.jpg",
+		image: "/img1.png",
 	},
 	{
 		title: "Hardscaping",
@@ -16,7 +16,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "4 Days",
 		price: "200$",
-		image: "/about/about-2.jpg",
+		image: "/img2.png",
 	},
 	{
 		title: "Planting & Softscaping",
@@ -24,7 +24,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "6 Days",
 		price: "800$",
-		image: "/about/about-3.jpg",
+		image: "/img3.png",
 	},
 	{
 		title: "Lawn Care & Maintenance",
@@ -32,7 +32,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "6 Days",
 		price: "800$",
-		image: "/about/about-3.jpg",
+		image: "/img4.png",
 	},
 	{
 		title: "Irrigation & Drainage",
@@ -40,7 +40,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "6 Days",
 		price: "800$",
-		image: "/about/about-3.jpg",
+		image: "/img5.png",
 	},
 	{
 		title: "Outdoor Lighting",
@@ -48,7 +48,7 @@ const services = [
 			"Creating beautiful, functional layouts tailored to your style and space.",
 		duration: "6 Days",
 		price: "800$",
-		image: "/about/about-3.jpg",
+		image: "/img6.png",
 	},
 ];
 

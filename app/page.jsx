@@ -1,7 +1,10 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
+import Testimonial from "@/components/testimonial";
 import WhyChooseUs from "@/components/whychooseus";
 
 export default function Home() {
@@ -13,7 +16,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url('https://images.unsplash.com/photo-1558522195-e1201b090344?auto=format&fit=crop&w=1920&q=80')",
+              "linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url('/hero/heroImg.png')",
           }}
         />
         <Navbar />
@@ -21,7 +24,10 @@ export default function Home() {
       </section>
       <About />
       <Services />
+      <Testimonial />
       <WhyChooseUs />
+      <Contact />
+      <Footer />
     </main>
   );
 }
