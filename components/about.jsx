@@ -67,14 +67,14 @@ export default function About() {
           {loopedGalleryImages.map((image, index) => (
             <div
               key={`${image}-${index}`}
-              className="relative h-[220px] w-[240px] flex-none overflow-hidden rounded-xl sm:h-[280px] sm:w-[300px] lg:h-[350px] lg:w-[320px]"
+              className="group relative h-[220px] w-[240px] flex-none overflow-hidden rounded-xl sm:h-[280px] sm:w-[300px] lg:h-[350px] lg:w-[320px]"
             >
               <Image
                 src={image}
                 alt="Landscaping showcase"
                 fill
                 sizes="(max-width: 640px) 240px, (max-width: 1024px) 300px, 320px"
-                className="object-cover"
+                className="object-cover transition duration-700 group-hover:scale-[1.05]"
               />
             </div>
           ))}

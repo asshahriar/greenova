@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const baseClassName =
-  "group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-primary px-6 font-medium text-dark duration-500";
+  "group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-primary px-6 font-medium text-dark shadow-[0_4px_12px_rgba(65,242,118,0.25)] transition duration-500 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_rgba(15,42,31,0.24)] active:translate-y-0";
 
 function ButtonContent({ children, showIcon }) {
   if (!showIcon) {

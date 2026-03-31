@@ -1,5 +1,6 @@
 'use client';
 
+import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { GiLeafSwirl } from "react-icons/gi";
@@ -14,15 +15,24 @@ const links = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
-    <header className="absolute inset-x-0 top-0 z-30">
+    <motion.header
+      className="absolute inset-x-0 top-0 z-30"
+      initial={shouldReduceMotion ? false : { opacity: 0, y: -16 }}
+      animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+    >
       <nav className="container flex items-center justify-between py-5 md:py-7">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-light transition hover:text-primary"
+          className="group inline-flex items-center gap-2 text-light transition duration-300 hover:text-primary"
         >
-          <GiLeafSwirl aria-hidden className="size-6" />
+          <GiLeafSwirl
+            aria-hidden
+            className="size-6 transition-transform duration-300 group-hover:rotate-6"
+          />
           <span className="sub-heading !tracking-[-0.02em] text-light">
             demowebsite
           </span>
@@ -47,7 +57,7 @@ export default function Navbar() {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="font-semibold text-light transition hover:text-primary"
+                className="font-semibold text-light transition duration-300 hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -70,7 +80,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block rounded-lg px-3 py-2 font-semibold text-light transition hover:bg-light/10"
+                  className="block rounded-lg px-3 py-2 font-semibold text-light transition duration-300 hover:bg-light/10"
                 >
                   {link.label}
                 </Link>
@@ -79,6 +89,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

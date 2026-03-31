@@ -13,7 +13,7 @@ export default function Home() {
       <section className="relative min-h-screen overflow-hidden">
         <div
           aria-hidden
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="hero-bg-enter absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
               "linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url('/hero/heroImg.png')",
